@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {auth} from "./config/firebase";
 import {useAuthState} from 'react-firebase-hooks/auth';
 import { signOut } from "firebase/auth"
-import "./Navbar.css";
+import "./App.css";
 
 export const Navbar = () =>{
 
@@ -16,7 +16,8 @@ export const Navbar = () =>{
         <div className="Navbar">
             <div> 
                 <Link to="/" className="link" style={{color:"white"}}>Home</Link>
-                <Link to='/login' className="link" style={{color:"white"}}> Login</Link>
+                {!user ? <Link to='/login' className="link" style={{color:"white"}}> Login</Link>:
+                <Link to='/createpost' className="link" style={{color:"white"}}>Post</Link>}
             </div>
             <div className="info">
                 {/* checking the condition for img shows if user ise login */}
