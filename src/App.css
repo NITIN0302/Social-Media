@@ -100,7 +100,7 @@ button:hover
   background-color:#1f242d;
   border:none;
   align-items:center;
-  margin:10px;
+  margin:15px;
 }
 
 .description
@@ -110,15 +110,19 @@ button:hover
   background-color:#1f242d;
   border:none;
   align-items:center;
-  margin:10px;
+  margin:15px;
   height:70px;
 }
 
+p{
+  font-size:10px;
+}
 .submit
 {
     color:black;
     height:30px;
     padding:5px;
+    margin:25px;
     border:none;
     border-radius: 5px;
     background-color:aqua;
@@ -128,4 +132,14 @@ button:hover
 
 .submit:hover{
   box-shadow:none;
+}
+
+.formbox
+{
+  border:1.5px solid aqua;
+  width:250px;
+  height:250px;
+  margin:auto;
+  margin-top:20vh;
+  border-radius:10px;
 }
